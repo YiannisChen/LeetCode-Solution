@@ -30,7 +30,7 @@ s consists of only lowercase English letters.
 import java.util.Map;
 import java.util.HashMap;
 
- class FirstUniqueCharacterInString387 {
+ class firstUniqueCharacterInString387 {
     public int firstUniqChar(String s) {
         Map<Character,Integer> frequencyMap=new HashMap<>();
         for(int i=0;i<s.length();i++){
@@ -67,6 +67,6 @@ import java.util.HashMap;
 
     public static void main(String[] args) {
         //test
-        System.out.println(new FirstUniqueCharacterInString387().firstUniqChar("leetcode"));
+        System.out.println(new firstUniqueCharacterInString387().firstUniqChar("leetcode"));
     }    
 }
