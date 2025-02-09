@@ -1,3 +1,4 @@
+package firstUniqueCharacterInString;
 /* 
  * 387.First Unique Character in a String
  *Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
@@ -30,7 +31,7 @@ s consists of only lowercase English letters.
 import java.util.Map;
 import java.util.HashMap;
 
- class firstUniqueCharacterInString387 {
+public class Solution {
     public int firstUniqChar(String s) {
         Map<Character,Integer> frequencyMap=new HashMap<>();
         for(int i=0;i<s.length();i++){
@@ -67,6 +68,6 @@ import java.util.HashMap;
 
     public static void main(String[] args) {
         //test
-        System.out.println(new firstUniqueCharacterInString387().firstUniqChar("leetcode"));
+        System.out.println(new Solution().firstUniqChar("leetcode"));
     }    
 }
